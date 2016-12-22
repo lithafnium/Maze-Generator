@@ -27,10 +27,10 @@ public class BFS {
 
 	// queue:    
 	// visited:  a b c d e f g
-	public static void main(String[] args) {
-		DFS dfs = new DFS(); 
-		
-	}
+//	public static void main(String[] args) {
+//		DFS dfs = new DFS(); 
+//		
+//	}
 	List<Node> breadthFirstSearch(Node node) {
 		ArrayList<Node> out = new ArrayList<Node>();
 		Queue<Node> q = new LinkedList<Node>();

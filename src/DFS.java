@@ -7,10 +7,29 @@ public class DFS {
 	//   e f g a b c d
 	// stack:   
 	// visited: a b c d g f e
+	int size; 
 	static Cell current; 
+	Cell[][] grid; 
+	DFS(int size){
+		this.size = size; 
+		grid = new Cell[size][size]; 
+		start(grid); 
+		
+		
+		
+
+	}
 	public static void main(String[] args) {
-		int size = 10; 
-		Cell[][] grid = new Cell[size][size]; 
+		
+	}
+	public Cell[][] getGrid(){
+		//System.out.println(grid == null);
+		return grid; 
+	}
+	public int getSize(){
+		return size; 
+	}
+	static void start(Cell[][] grid){
 		for(int i = 0; i < grid.length; i++){
 			for(int j = 0; j < grid[0].length; j++){
 				// up down left righit
@@ -47,14 +66,14 @@ public class DFS {
 		for(int i = 0; i < grid.length; i++){
 			for(int j = 0; j < grid[0].length; j++){
 				Cell cell = grid[i][j]; 
-				// outputs the walls of each cell - probably convert to ascii later 
-				System.out.print(count + " ");
-				System.out.print(cell.up + " ");
-				System.out.print(cell.down + " ");
-				System.out.print(cell.left + " ");
-				System.out.print(cell.right + " ");
-				System.out.println();
-				System.out.println("====================");
+				 //outputs the walls of each cell - probably convert to ascii later 
+//				System.out.print(count + " ");
+//				System.out.print(cell.up + " ");
+//				System.out.print(cell.down + " ");
+//				System.out.print(cell.left + " ");
+//				System.out.print(cell.right + " ");
+//				System.out.println();
+//				System.out.println("====================");
 				//System.out.println(cell.neighbors.size());
 				count++; 
 				//System.out.print(cell.id + " | ");
@@ -67,10 +86,7 @@ public class DFS {
 
 			}
 		}
-
 	}
-
-
 
 	static void depthFirstSearch(Cell current, boolean[][] visit) {
 
@@ -83,7 +99,7 @@ public class DFS {
 		while(!allVisited(visit)) {
 			if(!allneighborsVisited(current)){
 				if(current.getNeighbors() != null){
-					System.out.println("Current: "+current);
+					//System.out.println("Current: "+current);
 
 					Cell next = current.getNeighbors(); 
 					s.push(next); 
@@ -98,7 +114,7 @@ public class DFS {
 			else if(s.size() != 0){
 				current = s.pop(); 
 				visit[current.r][current.c] = true; 
-				System.out.println(current);
+				//System.out.println(current);
 			}
 			//System.out.println();
 		}

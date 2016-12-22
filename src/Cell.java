@@ -40,8 +40,8 @@ public class Cell {
 		
 		while(neighbors.get(randomNum).visited != false){
 			randomNum = rand.nextInt((neighbors.size())) ;
-			System.out.println("size:  " + neighbors.size());
-			System.out.println("random: " + randomNum);
+//			System.out.println("size:  " + neighbors.size());
+//			System.out.println("random: " + randomNum);
 			
 			//System.out.println(index);
 			//System.out.println("ow");
