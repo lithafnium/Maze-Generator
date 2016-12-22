@@ -34,7 +34,7 @@ class Grids extends Frame {
 			}
 		});
 
-		// Normal end ... pack it up!
+	
 		pack();
 	}
 

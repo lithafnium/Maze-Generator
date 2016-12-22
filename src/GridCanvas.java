@@ -5,11 +5,7 @@ import java.awt.Graphics;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-/**
- * Program to draw grids.
- * 
- * @author Ian Darwin, http://www.darwinsys.com/
- */
+
 class GridsCanvas extends Canvas {
   int width, height;
 
@@ -28,16 +24,12 @@ class GridsCanvas extends Canvas {
     //int i;
     width = getSize().width;
     height = getSize().height;
-   // System.out.println(grid == null);
-    // draw the rows
-    int rowHt = height / (rows);
-//    for (i = 0; i < rows; i++)
-//      g.drawLine(0, i * rowHt, width, i * rowHt);
 
-    // draw the columns
+    int rowHt = height / (rows);
+
+ 
     int rowWid = width / (cols);
-//    for (i = 0; i < cols; i++)
-//      g.drawLine(i * rowWid, 0, i * rowWid, height);
+
     System.out.println("Width: " + rowWid);
     System.out.println("Height: " + rowHt);
     for(int i = 0; i < rows; i++){
@@ -81,9 +73,7 @@ class GridsCanvas extends Canvas {
     	}
     }
   }
-  public void draw(Graphics g){
-	  
-  }
+ 
   
  
 }

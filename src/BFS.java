@@ -112,32 +112,6 @@ public class BFS {
 
 	}
 
-	/*
-	 * 
-	 * 
-	 List<Node> breadfirstSearch(Node node){
-	 	Queue<Node> q = new LinkedList<Node>(); 
-	 	Set<Node> visited = new HashSet<Node>(); 
-	 	ArrayList<Node> out = new ArrayList<>(); 
-
-	 	q.offer(node); 
-
-	 	while(q.size() > 0){
-	 		Node n = q.ppoll(); 
-	 		visited.add(n); 
-	 		out.add(n); 
-	 		for(Node m: n.neightbors){
-	 			if(!visited.contains(m)){
-	 				visited.add(m); 
-	 				q.offer(m); 
-	 			}
-	 		}
-
-	 	}
-
-
-	 }
-	 * 
-	 * */
+	
 
 }

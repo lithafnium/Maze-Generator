@@ -66,23 +66,7 @@ public class DFS {
 		for(int i = 0; i < grid.length; i++){
 			for(int j = 0; j < grid[0].length; j++){
 				Cell cell = grid[i][j]; 
-				 //outputs the walls of each cell - probably convert to ascii later 
-//				System.out.print(count + " ");
-//				System.out.print(cell.up + " ");
-//				System.out.print(cell.down + " ");
-//				System.out.print(cell.left + " ");
-//				System.out.print(cell.right + " ");
-//				System.out.println();
-//				System.out.println("====================");
-				//System.out.println(cell.neighbors.size());
-				count++; 
-				//System.out.print(cell.id + " | ");
-				//				for(int k = 0; k < cell.neighbors.size(); k++){
-				//					Cell n = cell.neighbors.get(k); 
-				//					
-				//					//System.out.print(n.id + " ");
-				//				}
-				//System.out.println();
+//		
 
 			}
 		}
@@ -94,7 +78,7 @@ public class DFS {
 		//Set<Cell> visited = new HashSet<Cell>();
 
 		s.push(current);
-		//visit[cell.r][cell.c] = true; 
+	
 		int count = 0; 
 		while(!allVisited(visit)) {
 			if(!allneighborsVisited(current)){
